@@ -1,5 +1,5 @@
 Summary:	Generic slider plugin for the Xfce4 Panel
-Summary(pl.UTF-8):	Wtyczka suwaka gólnego przeznaczenia dla panelu Xfce4
+Summary(pl.UTF-8):	Wtyczka suwaka ogólnego przeznaczenia dla panelu Xfce4
 Name:		xfce4-generic-slider
 Version:	1.0.0
 Release:	3
