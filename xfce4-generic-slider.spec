@@ -1,8 +1,8 @@
 Summary:	Generic slider plugin for the Xfce4 Panel
-Summary(pl.UTF-8):	Wtyczka ogólnego przeznaczenia dla panelu Xfce4
+Summary(pl.UTF-8):	Wtyczka suwaka gólnego przeznaczenia dla panelu Xfce4
 Name:		xfce4-generic-slider
 Version:	1.0.0
-Release:	2
+Release:	3
 License:	GPL v3
 Group:		X11/Applications
 Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-generic-slider/1.0/%{name}-%{version}.tar.bz2
@@ -30,11 +30,11 @@ set the value through calls to a second command.
 
 %description -l pl.UTF-8
 Xfce4-generic-slider to narzędzie pomagające użytkownikom Xfce radzić
-sobie ze zmienną, którą chcą zarówno GET, jak i SET. Pobieranie jest
-podobne do tego, co robi xfce4-genmon-plugin, z wyjątkiem tego, że
-numeryczne wyjście polecenia jest reprezentowane wizualnie na suwaku.
-Przeciąganie suwaka jest następnie używane do ustawiania wartości
-poprzez wywołania drugiego polecenia.
+sobie ze zmienną, którą chcą zarówno pobrać (GET), jak i ustawić
+(SET). Pobieranie jest podobne do tego, co robi xfce4-genmon-plugin, z
+wyjątkiem tego, że numeryczne wyjście polecenia jest reprezentowane
+wizualnie na suwaku. Przeciąganie suwaka jest następnie używane do
+ustawiania wartości poprzez wywołania drugiego polecenia.
 
 %prep
 %setup -q
