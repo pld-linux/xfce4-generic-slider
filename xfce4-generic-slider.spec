@@ -1,12 +1,12 @@
 Summary:	Generic slider plugin for the Xfce4 Panel
 Summary(pl.UTF-8):	Wtyczka suwaka ogólnego przeznaczenia dla panelu Xfce4
 Name:		xfce4-generic-slider
-Version:	1.0.0
-Release:	3
+Version:	1.0.1
+Release:	1
 License:	GPL v3
 Group:		X11/Applications
 Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-generic-slider/1.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	4a599079f49bdf462049e38bcc802e55
+# Source0-md5:	1367ab57ba98a8b641627feb91d00224
 URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-generic-slider
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -14,11 +14,11 @@ BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.50.0
 BuildRequires:	gtk+3-devel >= 3.22.0
 BuildRequires:	libtool
-BuildRequires:	libxfce4ui-devel >= 4.14.0
+BuildRequires:	libxfce4ui-devel >= 4.16.0
 BuildRequires:	perl-XML-Parser
 BuildRequires:	pkgconfig
-BuildRequires:	xfce4-dev-tools >= 4.14.0
-BuildRequires:	xfce4-panel-devel >= 4.14.0
+BuildRequires:	xfce4-dev-tools >= 4.16.0
+BuildRequires:	xfce4-panel-devel >= 4.16.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
