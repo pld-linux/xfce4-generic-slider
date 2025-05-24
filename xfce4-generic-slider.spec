@@ -1,20 +1,19 @@
 Summary:	Generic slider plugin for the Xfce4 Panel
 Summary(pl.UTF-8):	Wtyczka suwaka ogólnego przeznaczenia dla panelu Xfce4
 Name:		xfce4-generic-slider
-Version:	1.0.1
+Version:	1.1.0
 Release:	1
 License:	GPL v3
 Group:		X11/Applications
-Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-generic-slider/1.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	1367ab57ba98a8b641627feb91d00224
+Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-generic-slider/1.1/%{name}-%{version}.tar.xz
+# Source0-md5:	e85f2d26307a5113cd7c1f81ec6bea52
 URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-generic-slider
-BuildRequires:	autoconf
-BuildRequires:	automake
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.50.0
 BuildRequires:	gtk+3-devel >= 3.22.0
-BuildRequires:	libtool
 BuildRequires:	libxfce4ui-devel >= 4.16.0
+BuildRequires:	meson >= 0.54.0
+BuildRequires:	ninja
 BuildRequires:	perl-XML-Parser
 BuildRequires:	pkgconfig
 BuildRequires:	xfce4-dev-tools >= 4.16.0
@@ -40,18 +39,13 @@ ustawiania wartości poprzez wywołania drugiego polecenia.
 %setup -q
 
 %build
-%configure \
-	--disable-static
-
-%{__make}
+%meson
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
-
-%{__rm} $RPM_BUILD_ROOT%{_libdir}/xfce4/panel/plugins/*.la
+%meson_install
 
 %{__rm} -r $RPM_BUILD_ROOT%{_localedir}/ie
 
